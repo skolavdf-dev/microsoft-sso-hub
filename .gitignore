@@ -1,0 +1,2 @@
+# Ignorovat lokální konfiguraci obsahující citlivé klíče
+src/config.local.php

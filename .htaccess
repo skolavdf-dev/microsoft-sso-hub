@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Redirect /callback to callback.php
+RewriteRule ^callback$ callback.php [L,QSA]
