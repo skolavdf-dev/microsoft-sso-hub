@@ -72,6 +72,12 @@ $_SESSION['auth_flows'][$stateValue] = [
     'created_at' => time()
 ];
 $_SESSION['oauth_state'] = $stateValue; // Zpětná kompatibilita
+
+// Auto-redirect when valid callback provided — skip intermediate button page
+if ($isValid) {
+    header('Location: ' . $loginUrl);
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="cs">

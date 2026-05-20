@@ -272,9 +272,7 @@ try {
             <div class="grid">
                 <div>
                     <h2>Informace o uživateli</h2>
-                    <table>
                     <?php
-                    // Definice mapování zobrazovaných polí
                     $displayFields = [
                         'displayName' => 'Jméno',
                         'mail' => 'Email',
@@ -284,8 +282,6 @@ try {
                         'officeLocation' => 'Kancelář',
                         'id' => 'ID Uživatele'
                     ];
-                    
-                    // Pole pro zpracování hodnot (aby se vypsaly i prázdné)
                     ?>
                     <table>
                         <?php foreach ($displayFields as $key => $label): ?>
@@ -319,7 +315,6 @@ try {
                             <?php
                         }
                         ?>
-                    </table>
                     </table>
                 </div>
 
